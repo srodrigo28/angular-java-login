@@ -1,20 +1,21 @@
 <main>
     <section class="form-section">
         <img src="/assets/svg/logo.svg" />
-        <h2></h2>
-        <button>Entrar</button>
-        <div>
-            <span>or</span>
-        </div>
-        <button>Cadastra-se</button>
+        <h2 > {{titulo2}} - </h2>
+        <ng-content></ng-content>
+        <button class="primary"> {{primaryBtnText}} </button>
+            <div class="divider">
+                <span class="divider1"></span>
+                <span>Ou</span>
+                <span class="divider1"></span>
+            </div>
+        <button class="secondary"> {{secondaryBtnText}} </button>
     </section>
     <section class="main-section">
-        <h2>You Should, MoveIt!</h2>
+        <h2>Você pode viver uma vida mais feliz</h2>
         <img src="/assets/svg/main-illustration.svg" />
     </section>
 </main>
-
-
 
 
 

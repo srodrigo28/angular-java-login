@@ -1,0 +1,42 @@
+$primary-color: #7001fd;
+$text-color: #555555;
+$secondary-color: #1e2772;
+$gray-bg: #eeeeee;
+$gray-secondary-bg: #f1f3f6;
+$form-bg: #1d1d1d;
+
+.input-wrapper {
+    color: $text-color;
+    font-size: 16px;
+    text-align: start;
+    margin-bottom: 10px;
+
+    .input-content {
+        width: 100%;
+        border-radius: 8px;
+        display: flex;
+
+        .icon {
+            padding: 12px;
+            cursor: pointer;
+            color: #eeeeee;
+            width: 40px;
+            height: 44px;
+            background-color: $primary-color;
+            border-radius: 0px 8px 8px 0;
+            margin-left: 3px;
+        }
+
+        input {
+            border-radius: 8px 0 0 8px;
+            padding: 12px;
+            outline: none;
+            width: 100%;
+            border: none;
+            background-color: $gray-secondary-bg;
+
+            color: $text-color;
+            font-weight: 500;
+        }
+    }
+}

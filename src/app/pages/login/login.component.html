@@ -1,3 +1,21 @@
-<app-default-login-layout>
-    
+<app-default-login-layout titulo2="Seja bem vindo" primaryBtnText="Entrar"
+    secondaryBtnText="Cadastrar-se">
+    <form>
+        <app-primary-input 
+            type="email" 
+            inputName="email"
+            placeholder="Email" 
+            label="Email">
+            <i class="bi bi-envelope-open"></i>
+        </app-primary-input>
+
+        <app-primary-input 
+            type="password" 
+            inputName="password"
+            placeholder="Senha" 
+            label="Senha">
+            <i class="bi bi-key-fill"></i>
+        </app-primary-input>
+        <span>Esqueci minha senha?</span>
+    </form>
 </app-default-login-layout>

@@ -1,0 +1,21 @@
+$primary-color: #7001FD;
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    span{
+        font-size: 14px;
+        color: $primary-color;
+        text-align: end;
+        letter-spacing: 1.5px;
+        cursor: pointer;
+        margin-top: 7px;
+        transition: all 0.2s ease-in-out;
+    }
+    span:hover{
+        transform: scale(1.02);
+        text-decoration: underline;
+    }
+}
+
