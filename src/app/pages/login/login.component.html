@@ -1,8 +1,10 @@
 <app-default-login-layout 
-        (submit)="submit()"
         primaryBtnText="Entrar" 
         titulo2="Seja bem vindo" 
         secondaryBtnText="Cadastrar-se"
+        (submit)="submit()"
+        (navigate)="navigate()"
+        [disablePrimaryBtn]="!loginForm.valid"
     >
     <form [formGroup]="loginForm">
         <app-primary-input type="email" formControlName="email" inputName="email" inputName="email" placeholder="Email"

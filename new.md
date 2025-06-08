@@ -14,3 +14,12 @@ https://www.youtube.com/watch?v=O26fDEnAukY&t=21s
 ng g c pages/login
 ng g c components/primary-input
 ng g c components/default-login-layout
+
+> * Services
+
+ng g s services/login
+
+> * Dependências
+npm i ngx-toastr
+
+https://www.npmjs.com/package/ngx-toastr

@@ -65,6 +65,11 @@ main{
                 margin-top: 50px;
             }
 
+            &:disabled {
+                opacity: 0.5;
+                cursor: not-allowed;
+            }
+
             &.primary:hover{
                 background-color: $gray-secondary-bg;
                 border: 1px solid $primary-color;
