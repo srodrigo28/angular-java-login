@@ -3,6 +3,10 @@
 ``` 54min revisar
 https://www.youtube.com/watch?v=6qbuuPM_de4
 ```
+* Parte 02 Backend
+```
+https://www.youtube.com/watch?v=tJCyNV1G0P4
+```
 
 https://www.figma.com/design/7T1wkErczpMOBeqtpVjMSb/Login-Page-Design?node-id=6-920
 

@@ -1,0 +1,32 @@
+<app-default-login-layout 
+        primaryBtnText="Cadastre-se" 
+        titulo2="Seja bem vindo" 
+        secondaryBtnText="Voltar para login"
+        
+        (submit)="submit()"
+        (navigate)="navigate()"
+        [disablePrimaryBtn]="!signupForm.valid"
+    >
+    <form [formGroup]="signupForm">
+        <app-primary-input type="text" formControlName="name" 
+            inputName="name" placeholder="nome completo"
+            label="Nome completo">
+            <i class="bi bi-envelope-open"></i>
+        </app-primary-input>
+        
+        <app-primary-input type="email" formControlName="email" inputName="email" inputName="email" placeholder="Email"
+            label="Email">
+            <i class="bi bi-envelope-open"></i>
+        </app-primary-input>
+
+        <app-primary-input formControlName="password" inputName="password" type="password" inputName="password"
+            placeholder="Senha" label="Senha">
+            <i class="bi bi-key-fill"></i>
+        </app-primary-input>
+        <app-primary-input formControlName="passwordConfirm" 
+            inputName="passwordConfirm" type="password" inputName="passwordConfirm"
+            placeholder="Confirmar a senha" label="Confirmar a senha">
+            <i class="bi bi-key-fill"></i>
+        </app-primary-input>
+    </form>
+</app-default-login-layout>
