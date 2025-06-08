@@ -24,4 +24,9 @@ export class LoginComponent {
       password: new FormControl('', [Validators.required, Validators.minLength(6)]),
     });
   }
+
+  submit() {
+    alert("Site em construção");
+    console.log(this.loginForm.value);
+  }
 }

@@ -1,5 +1,7 @@
 <app-default-login-layout titulo2="Seja bem vindo" primaryBtnText="Entrar"
-    secondaryBtnText="Cadastrar-se">
+    secondaryBtnText="Cadastrar-se"
+    (submit)="submit()"
+>
     <form>
         <app-primary-input 
             type="email" 
