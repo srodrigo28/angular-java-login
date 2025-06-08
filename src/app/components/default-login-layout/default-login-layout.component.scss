@@ -102,3 +102,11 @@ main{
         background-color: $primary-color;
     }
 }
+
+
+@media(max-width: 780px) {
+    .main-section{
+        display: none !important;
+        background-color: red !important;
+    }
+}
