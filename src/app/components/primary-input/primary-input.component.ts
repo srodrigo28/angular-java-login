@@ -7,7 +7,7 @@ type InputTypes = 'text' | 'email' | 'password';
   selector: 'app-primary-input',
   standalone: true,
   imports: [ReactiveFormsModule],
-  providers:[
+  providers: [
     {
       provide: NG_VALUE_ACCESSOR,
       useExisting: forwardRef(() => PrimaryInputComponent),
@@ -18,9 +18,6 @@ type InputTypes = 'text' | 'email' | 'password';
   styleUrl: './primary-input.component.scss'
 })
 export class PrimaryInputComponent implements ControlValueAccessor {
-  registerOnTouched(fn: any): void {
-    throw new Error('Method not implemented.');
-  }
   @Input() type: InputTypes = 'text';
   @Input() placeholder: string = '';
   @Input() label: string = '';
@@ -32,7 +29,7 @@ export class PrimaryInputComponent implements ControlValueAccessor {
 
   onInput(event: Event) {
     const value = (event.target as HTMLInputElement).value
-    this.value = value
+    this.onChange(value)
   }
 
   writeValue(value: string): void {
@@ -42,8 +39,11 @@ export class PrimaryInputComponent implements ControlValueAccessor {
   registerOnChange(fn: any): void {
     this.onChange = fn
   }
+  registerOnTouched(fn: any): void {
+    this.onTouched = fn
+   }
 
   setDisabledState?(isDisabled: boolean): void {
-    throw new Error('Method not implemented.');
+    
   }
 }

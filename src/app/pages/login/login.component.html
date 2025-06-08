@@ -1,21 +1,17 @@
-<app-default-login-layout titulo2="Seja bem vindo" primaryBtnText="Entrar"
-    secondaryBtnText="Cadastrar-se"
-    (submit)="submit()"
->
-    <form>
-        <app-primary-input 
-            type="email" 
-            inputName="email"
-            placeholder="Email" 
+<app-default-login-layout 
+        (submit)="submit()"
+        primaryBtnText="Entrar" 
+        titulo2="Seja bem vindo" 
+        secondaryBtnText="Cadastrar-se"
+    >
+    <form [formGroup]="loginForm">
+        <app-primary-input type="email" formControlName="email" inputName="email" inputName="email" placeholder="Email"
             label="Email">
             <i class="bi bi-envelope-open"></i>
         </app-primary-input>
 
-        <app-primary-input 
-            type="password" 
-            inputName="password"
-            placeholder="Senha" 
-            label="Senha">
+        <app-primary-input formControlName="password" inputName="password" type="password" inputName="password"
+            placeholder="Senha" label="Senha">
             <i class="bi bi-key-fill"></i>
         </app-primary-input>
         <span>Esqueci minha senha?</span>
