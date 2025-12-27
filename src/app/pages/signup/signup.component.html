@@ -1,12 +1,14 @@
 <app-default-login-layout 
         primaryBtnText="Cadastre-se" 
-        titulo2="Seja bem vindo"
+        titulo2="Cadastre-se"
         secondaryBtnText="Voltar para login"
+        
         
         (submit)="submit()"
         (navigate)="navigate()"
         [disablePrimaryBtn]="!signupForm.valid"
     >
+    <br />
     <form [formGroup]="signupForm">
         <app-primary-input type="text" formControlName="name" 
             inputName="name" placeholder="nome completo"

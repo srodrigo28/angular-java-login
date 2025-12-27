@@ -1,9 +1,14 @@
 
-* Link
+### Link
+
+> * Frontend
+https://www.youtube.com/watch?v=6qbuuPM_de4&t=5s
+
 ``` 54min revisar
 https://www.youtube.com/watch?v=6qbuuPM_de4
 ```
-* Parte 02 Backend
+
+* Parte 02 Backend Java
 ```
 https://www.youtube.com/watch?v=tJCyNV1G0P4
 ```
