@@ -1,6 +1,7 @@
 # Projeto Angular com Login
 
-Este é um projeto de exemplo para uma tela de login usando Angular 17+ e SCSS.
+> * Este é um projeto de exemplo para uma tela de login usando Angular 18+ e SCSS.
+> * Preparação para API
 
 ## Telas
 

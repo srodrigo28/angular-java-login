@@ -34,7 +34,9 @@
             "styles": [
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "public/assets/js/seo.js"
+            ]
           },
           "configurations": {
             "production": {
